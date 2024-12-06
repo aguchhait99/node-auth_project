@@ -8,6 +8,7 @@ const router = express.Router()
 
 // APIs
 router.post('/register/user', ImageUpload.single('image'), AuthController.userRegistration)
+router.post('/login/user', AuthController.userLogin)
 
 
 module.exports = router
